@@ -39,7 +39,7 @@
         "format": "esm"
       },
       "src/zapid/index.ts": {
-        "bytes": 140,
+        "bytes": 198,
         "imports": [
           {
             "path": "src/types/index.ts",
@@ -60,7 +60,7 @@
         "format": "esm"
       },
       "src/index.ts": {
-        "bytes": 64,
+        "bytes": 150,
         "imports": [
           {
             "path": "src/zapid/index.ts",
@@ -84,7 +84,7 @@
         "entryPoint": "src/index.ts",
         "inputs": {
           "src/index.ts": {
-            "bytesInOutput": 186
+            "bytesInOutput": 102
           },
           "src/types/index.ts": {
             "bytesInOutput": 152
@@ -99,7 +99,7 @@
             "bytesInOutput": 1125
           }
         },
-        "bytes": 2793
+        "bytes": 2709
       }
     }
   },
@@ -143,7 +143,7 @@
         "format": "esm"
       },
       "src/zapid/index.ts": {
-        "bytes": 140,
+        "bytes": 198,
         "imports": [
           {
             "path": "src/types/index.ts",
@@ -164,7 +164,7 @@
         "format": "esm"
       },
       "src/index.ts": {
-        "bytes": 64,
+        "bytes": 150,
         "imports": [
           {
             "path": "src/zapid/index.ts",
@@ -186,12 +186,8 @@
         ],
         "exports": [
           "VERSION",
-          "ZapidError",
-          "ZapidValidationError",
           "generate",
-          "generateWithInfo",
-          "getRandomBytes",
-          "getRandomInt"
+          "generateWithInfo"
         ],
         "entryPoint": "src/index.ts",
         "inputs": {
@@ -211,7 +207,7 @@
             "bytesInOutput": 14
           }
         },
-        "bytes": 2612
+        "bytes": 2532
       }
     }
   }

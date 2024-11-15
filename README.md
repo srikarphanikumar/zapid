@@ -4,7 +4,6 @@
 
 [![npm version](https://img.shields.io/npm/v/zapid.svg)](https://www.npmjs.com/package/zapid)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/npm/dt/zapid.svg)](https://www.npmjs.com/package/zapid)
 
 **Generate Lightning-Fast, Secure IDs with Built-in Collision Protection** 
 
