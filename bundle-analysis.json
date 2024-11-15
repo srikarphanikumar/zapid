@@ -1,0 +1,218 @@
+{
+  "cjs": {
+    "inputs": {
+      "src/types/index.ts": {
+        "bytes": 605,
+        "imports": [],
+        "format": "esm"
+      },
+      "src/zapid/crypto.ts": {
+        "bytes": 4094,
+        "imports": [
+          {
+            "path": "src/types/index.ts",
+            "kind": "import-statement",
+            "original": "../types"
+          },
+          {
+            "path": "crypto",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/zapid/generator.ts": {
+        "bytes": 5906,
+        "imports": [
+          {
+            "path": "src/zapid/crypto.ts",
+            "kind": "import-statement",
+            "original": "./crypto"
+          },
+          {
+            "path": "src/types/index.ts",
+            "kind": "import-statement",
+            "original": "../types"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/zapid/index.ts": {
+        "bytes": 140,
+        "imports": [
+          {
+            "path": "src/types/index.ts",
+            "kind": "import-statement",
+            "original": "../types"
+          },
+          {
+            "path": "src/zapid/generator.ts",
+            "kind": "import-statement",
+            "original": "./generator"
+          },
+          {
+            "path": "src/zapid/crypto.ts",
+            "kind": "import-statement",
+            "original": "./crypto"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/index.ts": {
+        "bytes": 64,
+        "imports": [
+          {
+            "path": "src/zapid/index.ts",
+            "kind": "import-statement",
+            "original": "./zapid"
+          }
+        ],
+        "format": "esm"
+      }
+    },
+    "outputs": {
+      "dist/index.js": {
+        "imports": [
+          {
+            "path": "crypto",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "exports": [],
+        "entryPoint": "src/index.ts",
+        "inputs": {
+          "src/index.ts": {
+            "bytesInOutput": 186
+          },
+          "src/types/index.ts": {
+            "bytesInOutput": 152
+          },
+          "src/zapid/index.ts": {
+            "bytesInOutput": 0
+          },
+          "src/zapid/crypto.ts": {
+            "bytesInOutput": 904
+          },
+          "src/zapid/generator.ts": {
+            "bytesInOutput": 1125
+          }
+        },
+        "bytes": 2793
+      }
+    }
+  },
+  "esm": {
+    "inputs": {
+      "src/types/index.ts": {
+        "bytes": 605,
+        "imports": [],
+        "format": "esm"
+      },
+      "src/zapid/crypto.ts": {
+        "bytes": 4094,
+        "imports": [
+          {
+            "path": "src/types/index.ts",
+            "kind": "import-statement",
+            "original": "../types"
+          },
+          {
+            "path": "crypto",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "format": "esm"
+      },
+      "src/zapid/generator.ts": {
+        "bytes": 5906,
+        "imports": [
+          {
+            "path": "src/zapid/crypto.ts",
+            "kind": "import-statement",
+            "original": "./crypto"
+          },
+          {
+            "path": "src/types/index.ts",
+            "kind": "import-statement",
+            "original": "../types"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/zapid/index.ts": {
+        "bytes": 140,
+        "imports": [
+          {
+            "path": "src/types/index.ts",
+            "kind": "import-statement",
+            "original": "../types"
+          },
+          {
+            "path": "src/zapid/generator.ts",
+            "kind": "import-statement",
+            "original": "./generator"
+          },
+          {
+            "path": "src/zapid/crypto.ts",
+            "kind": "import-statement",
+            "original": "./crypto"
+          }
+        ],
+        "format": "esm"
+      },
+      "src/index.ts": {
+        "bytes": 64,
+        "imports": [
+          {
+            "path": "src/zapid/index.ts",
+            "kind": "import-statement",
+            "original": "./zapid"
+          }
+        ],
+        "format": "esm"
+      }
+    },
+    "outputs": {
+      "dist/index.mjs": {
+        "imports": [
+          {
+            "path": "crypto",
+            "kind": "require-call",
+            "external": true
+          }
+        ],
+        "exports": [
+          "VERSION",
+          "ZapidError",
+          "ZapidValidationError",
+          "generate",
+          "generateWithInfo",
+          "getRandomBytes",
+          "getRandomInt"
+        ],
+        "entryPoint": "src/index.ts",
+        "inputs": {
+          "src/types/index.ts": {
+            "bytesInOutput": 152
+          },
+          "src/zapid/index.ts": {
+            "bytesInOutput": 0
+          },
+          "src/zapid/crypto.ts": {
+            "bytesInOutput": 898
+          },
+          "src/zapid/generator.ts": {
+            "bytesInOutput": 1125
+          },
+          "src/index.ts": {
+            "bytesInOutput": 14
+          }
+        },
+        "bytes": 2612
+      }
+    }
+  }
+}

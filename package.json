@@ -6,7 +6,8 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "ts-node build.ts",
+    "build": "ts-node build.ts && ts-node check-size.ts",
+    "analyze": "ts-node check-size.ts",
     "clean": "rimraf dist",
     "prepare": "npm run clean && npm run build",
     "test": "jest",
